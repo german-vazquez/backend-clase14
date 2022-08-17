@@ -10,7 +10,9 @@ public class BD {
     private static final String USER="sa";
     private static final String PASS="sa";
 
-    private static final String SQL_CREATE_TABLE= "drop table is exists medicamentos; create table medicamentos ( " +
+    private static final String SQL_CREATE_TABLE=
+            "drop table if exists medicamentos;" +
+                    " create table medicamentos ( " +
             "id int auto_increment primary key, " +
             "nombre varchar(100), " +
             "laboratorio varchar (100), " +

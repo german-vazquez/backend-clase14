@@ -15,4 +15,7 @@ public class MedicamentoService {
     public Medicamento guardar (Medicamento medicamento){
         return medicamentoDao.guardar(medicamento);
     }
+    public Medicamento buscarXId(Integer id){
+        return medicamentoDao.buscar(id);
+    }
 }
